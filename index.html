@@ -417,16 +417,16 @@
 
     </div>
 
-    <form method="POST" action="https://api.web3forms.com/submit">
-        <input type="hidden" name="access_key" value="8111d4bf-3877-4f90-8e4c-527b2ee652ad" id="">
-        <div id="contactForm" style="display: none;"
-            class="fixed w-full h-screen top-0 left-0 z-10 transition-all duration-500 p-5 fastFadeIn flex items-center justify-center">
-            <div class="fixed fastFadeIn bg-[#0000009f] w-full h-screen top-0 left-0  transition-all duration-500 hidden"
-                id="overlay"></div>
-            <div class="bg-gradient-to-r from-[#1a77cc] to-[#63b94d] max-w-[40rem] z-20 w-full p-5 rounded-2xl">
-                <h2 class="text-center font-bold text-2xl text-white">Book your ride today!</h2>
-    
-                <div class="text-white mt-10 md:px-10">
+
+    <div id="contactForm" style="display: none;"
+        class="fixed w-full h-screen top-0 left-0 z-10 transition-all duration-500 p-5 fastFadeIn flex items-center justify-center">
+        <div class="fixed fastFadeIn bg-[#0000009f] w-full h-screen top-0 left-0  transition-all duration-500 hidden"
+            id="overlay"></div>
+        <div class="bg-gradient-to-r from-[#1a77cc] to-[#63b94d] max-w-[40rem] z-20 w-full p-5 rounded-2xl">
+            <h2 class="text-center font-bold text-2xl text-white">Book your ride today!</h2>
+            <div class="text-white mt-10 md:px-10">
+                <form method="POST" action="https://api.web3forms.com/submit">
+                    <input type="hidden" name="access_key" value="8111d4bf-3877-4f90-8e4c-527b2ee652ad" id="">
                     <div class="flex items-center justify-between sm:gap-5 gap-0">
                         <label for="name" class="font-bold text-lg">Name</label>
                         <input type="text" id="name" name="name"
@@ -445,46 +445,46 @@
                     <div class="flex justify-between sm:gap-5 gap-0 mt-5 ">
                         <label for="Message" class="font-bold block mt-1 text-lg text-nowrap">Message</label>
                         <textarea type="text" id="Message" name="Message"
-                            class="p-3 text-black resize-none w-full sm:max-w-[26rem] max-w-[11.5rem] rounded-3xl" required
-                            rows="4"></textarea>
+                            class="p-3 text-black resize-none w-full sm:max-w-[26rem] max-w-[11.5rem] rounded-3xl"
+                            required rows="4"></textarea>
                     </div>
-    
                     <div class="flex items-center justify-end mt-2 mx-auto max-w-[16rem]">
                         <button type="submit"
                             class="bg-white text-black rounded-full px-5 py-2 flex items-center justify-center gap-3 font-medium">
                             Send Message
                         </button>
                     </div>
-                    <div class="flex mt-5 items-center justify-between max-w-md mx-auto md:flex-row flex-col gap-2">
-                        <h2 class="font-bold">You can call us at:</h2>
-                        <div class="">
-                            <h2 class="font-bold">+1-866-FUN-RIDE</h2>
-                            <h2 class="font-bold">+1-866-386-7433</h2>
-                            <h2 class="font-bold">+1-954-525-7796</h2>
-    
-                        </div>
-                    </div>
-                    <div class="flex mt-5 items-center justify-between max-w-[22rem] mx-auto md:flex-row flex-col gap-2">
-                        <a href="https://wa.link/5zbhpi">
-                            <button
-                                class="bg-white text-black rounded-full px-5 py-2 flex items-center justify-center gap-3 font-medium">
-                                <i class="fa-brands fa-whatsapp text-3xl text-[#1ba553]"></i>
-                                Whatsapp
-                            </button>
-                        </a>
-                        <a href="mailto:mtriestman@gmail.com">
-                            <button
-                                class="bg-white text-black rounded-full px-9 py-2.5 flex items-center justify-center gap-3 font-medium">
-                                <img src="./Docs/Assets/mail.webp" class="h-8" alt="">
-                                E-Mail
-                            </button>
-                        </a>
+                </form>
+
+                <div class="flex mt-5 items-center justify-between max-w-md mx-auto md:flex-row flex-col gap-2">
+                    <h2 class="font-bold">You can call us at:</h2>
+                    <div class="">
+                        <h2 class="font-bold">+1-866-FUN-RIDE</h2>
+                        <h2 class="font-bold">+1-866-386-7433</h2>
+                        <h2 class="font-bold">+1-954-525-7796</h2>
+
                     </div>
                 </div>
-    
+                <div class="flex mt-5 items-center justify-between max-w-[22rem] mx-auto md:flex-row flex-col gap-2">
+                    <a href="https://wa.link/5zbhpi">
+                        <button
+                            class="bg-white text-black rounded-full px-5 py-2 flex items-center justify-center gap-3 font-medium">
+                            <i class="fa-brands fa-whatsapp text-3xl text-[#1ba553]"></i>
+                            Whatsapp
+                        </button>
+                    </a>
+                    <a href="mailto:mtriestman@gmail.com">
+                        <button
+                            class="bg-white text-black rounded-full px-9 py-2.5 flex items-center justify-center gap-3 font-medium">
+                            <img src="./Docs/Assets/mail.webp" class="h-8" alt="">
+                            E-Mail
+                        </button>
+                    </a>
+                </div>
             </div>
+
         </div>
-    </form>
+    </div>
 
     <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
     <script src="./Docs/Javascripts/global.js"></script>
